@@ -1,0 +1,16 @@
+/* 12 grid */
+.grid121 { width: 60px; }
+.grid122 { width: 140px; }
+.grid123 { width: 220px; }
+.grid124 { width: 300px; }
+.grid125 { width: 380px; }
+.grid126 { width: 460px; }
+.grid127 { width: 540px; }
+.grid128 { width: 620px; }
+.grid129 { width: 700px; }
+.grid1210 { width: 780px; }
+.grid1211 { width: 860px; }
+/* all */
+.gridmax { width: 940px; }
+.container { width: 960px; }
+.margin { margin: 0 10px; }
