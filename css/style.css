@@ -74,23 +74,36 @@ em { font-style: italic; }
    */
 
   /*
+   * CATALOG
+   */
+.catalog { overflow: hidden; margin-top: 30px; }
+.catalog * { display: block; }
+.catalog h2 { font: bold 1.1em sans-serif; color: #aaa; text-transform: uppercase; border-bottom: 3px solid #aaa; }
+.catalog:hover h2 { color: #666; border-bottom-color: #666; }
+.catalog a { overflow: hidden; }
+
+.catalog .product { float: left; position: relative; width: 220px; margin: 15px 10px 0; }
+  .catalog .product:hover > a { color:#333; text-decoration: none; }
+  .catalog .product .name { padding: 5px 0; font-weight: bold; text-align: center; }
+  .catalog .product .price { float: right; position: absolute; right: 5px; top: 235px; padding: 10px; font: bold 3em serif; color: #333; background: #fff; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; }
+  .catalog .product .price:before { float: left; padding-right: 5px; content: '$'; font: normal .5em sans-serif; }
+  .catalog .product .price, .product .price:before { line-height: 30px; }
+
+  /*
    * PRODUCT
    */
-.products { overflow: hidden; margin-top: 30px; }
-.products * { display: block; }
-.products h2 { font: bold 1.1em sans-serif; color: #aaa; text-transform: uppercase; border-bottom: 3px solid #aaa; }
-.products:hover h2 { color: #666; border-bottom-color: #666; }
-.products a { overflow: hidden; }
+.product { overflow: hidden; font-size: .95em; }
+  .product .info .name { margin: 0 0 10px; font: bold 2em serif !important; line-height: 1; }
 
-.product { float: left; position: relative; width: 220px; margin: 15px 10px 0; }
-  .product:hover > a { color:#333; text-decoration: none; }
-  .product .name { padding: 5px 0; font-weight: bold; text-align: center; }
-  .product .price { float: right; position: absolute; right: 5px; top: 235px; padding: 10px; font: bold 3em serif; color: #333; background: #fff;
-                    border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; }
-  .product .price:before { float: left; padding-right: 5px; content: '$'; font: normal .5em sans-serif; }
-  .product .price, .product .price:before { line-height: 30px; }
+  .product .info p { margin: 5px 0; }
+  .product .info ul { list-style-type: square; list-style-position: inside; }
+  .product .info ul li { margin-left: 0px; }
 
-#product { }
+.shop .price:before { content: '$'; }
+#add_to_cart ul { overflow: hidden; }
+#add_to_cart ul li { float: left; padding: 6px; }
+#add_to_cart ul li:nth-child(3), #add_to_cart ul li:nth-child(6) { clear: left; }
+
 /*
  * FOOTER
  */

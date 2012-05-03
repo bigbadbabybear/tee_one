@@ -1,0 +1,14 @@
+.theme-batu-product { width: 300px; height: 530px; }
+.theme-batu-product .nivoSlider { position:relative; width: 300px; height: 420px; background: url(../images/slider/loading.gif) no-repeat 50% 50%; }
+.theme-batu-product .nivoSlider > img { position:absolute; top: 0; left: 0; display:none; width: 300px; height: 420px; }
+noscript .theme-batu-product .nivoSlider img { display: block; }
+.theme-batu-product .nivoSlider a { border:0; display:block; }
+
+.theme-batu-product .nivo-controlNav { position: absolute; bottom: -110px; width: 300px; height: 105px; }
+.theme-batu-product .nivo-control { float: left; }
+.theme-batu-product .nivo-control img { float: left; display: block !important; vertical-align: middle; height: 100%; }
+
+.theme-batu-product .active img { }
+
+/* faux shadow */
+.theme-batu-product .nivoSlider, .theme-batu-product .nivo-controlNav { border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; }
