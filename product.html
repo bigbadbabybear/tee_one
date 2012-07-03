@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Designed By Batucan</title>
+    <title>Raise Your Hand (Girls) - Designed By Batucan</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/12col.css"/>
@@ -17,10 +17,10 @@
         <div id="info" class="grid124 margin fleft">
           <h2>Info</h2>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Charity</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="page.html">About Us</a></li>
+            <li><a href="page.html">Charity</a></li>
+            <li><a href="page.html">FAQ</a></li>
+            <li><a href="page.html">Contact</a></li>
           </ul>
         </div><!-- end info -->
         <div id="cart" class="grid123 margin fleft">
@@ -64,7 +64,7 @@
               </ul>
             </li>
           </ul>
-          <form id="search" action="search_results.html">
+          <form id="hsearch" action="search_results.html">
             <p class="grid122 margin fright">
               <input type="text" placeholder="SEARCH"/>
               <input type="submit" value="Search"/>
@@ -77,15 +77,24 @@
         <!-- maybe insert breadcrumb here -->
         <div class="product">
           <!-- photo gallery -->
+          <noscript>
             <div class="theme-batu-product margin fleft">
-              <div id="slider" class="nivoSlider">
-                <img src="images/prod_nice_girl/pic1.jpg" alt="" />
-                <img src="images/prod_nice_girl/pic2.jpg" alt="" />
-                <img src="images/prod_nice_girl/pic3.jpg" alt="" />
-                <img src="images/prod_nice_girl/pic4.jpg" alt="" />
-              </div>
-            </div>  
-            <script type="text/javascript">
+                <div id="slider" class="nivoSlider">
+                  <img src="images/prod_nice_girl/pic1.jpg" alt="" />
+                </div>
+            </div>
+          </noscript>
+          <script type="text/javascript">
+            document.write(
+            '<div class="theme-batu-product margin fleft">'+
+              '<div id="slider" class="nivoSlider">'+
+                '<img src="images/prod_nice_girl/pic1.jpg" alt="" />'+
+                '<img src="images/prod_nice_girl/pic2.jpg" alt="" />'+
+                '<img src="images/prod_nice_girl/pic3.jpg" alt="" />'+
+                '<img src="images/prod_nice_girl/pic4.jpg" alt="" />'+
+              '</div>'+
+            '</div>'
+            );
             $(document).ready(function() {
                 $('#slider').nivoSlider({
                   effect: 'slideInRight',
@@ -127,17 +136,70 @@
             </ul>
           </div><!-- end info-->
           <div class="shop grid123 margin fleft">
-            <p class="price">99.25</p>
-            <form id="add_to_cart">
-              <ul>
-                <li><label><input type="checkbox" /> XXS</label></li>
-                <li><label><input type="checkbox" /> XS</label></li>
-                <li><label><input type="checkbox" /> S</label></li>
-                <li><label><input type="checkbox" /> M</label></li>
-                <li><label><input type="checkbox" /> L</label></li>
-                <li><label><input type="checkbox" /> XL</label></li>
-                <li><label><input type="checkbox" /> XXL</label></li>
-              </ul>
+            <p class="price">99.25 Shirt</p>
+            <form id="add_to_cart" action="cart.html">
+              <div class="sizes m_sizes">
+                <h2>Guys</h2>
+                <label class="none">
+                  <input type="checkbox" disabled/>
+                  <span>XXS</span>
+                </label>
+                <label class="none">
+                  <input type="checkbox" disabled/>
+                  <span>XS</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>S</span><span>9999 left</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>M</span><span>9999 left</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>L</span><span>9999 left</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>XL</span><span>9999 left</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>XXL</span><span>9999 left</span>
+                </label>
+              </div>
+              <div class="sizes f_sizes">
+                <h2>Girls</h2>
+                <label>
+                  <input type="checkbox" />
+                  <span>XXS</span><span>9999 left</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>XS</span><span>9999 left</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>S</span><span>9999 left</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>M</span><span>9999 left</span>
+                </label>
+                <label class="none">
+                  <input type="checkbox" disabled/>
+                  <span>L</span>
+                </label>
+                <label class="none">
+                  <input type="checkbox" disabled/>
+                  <span>XL</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>XXL</span><span>9999 left</span>
+                </label>
+              </div>
               <input type="submit" value="Add to Cart" class="btn_add"/>
             </form>
           </div>
@@ -147,12 +209,12 @@
     <div id="footer" class="container center">
       <ul id="footer-nav">
         <li>Copyright &copy; Designed By Batucan 2012</li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Search</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
+        <li><a href="page.html">About Us</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="page.html">Terms of Service</a></li>
+        <li><a href="page.html">Privacy Policy</a></li>
+        <li><a href="http://www.twitter.com/">Twitter</a></li>
+        <li><a href="http://www.facebook.com/">Facebook</a></li>
       </ul>
       <div class="clearfix"></div>
     </div><!-- emd footer -->

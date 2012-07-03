@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Designed By Batucan</title>
@@ -6,11 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/12col.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-    <script type="text/javascript" src="js/nivo.slider.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/nivo.slider.theme-batu.css"/>
   </head>
   <body>
     <div id="top" class="container center">
@@ -19,10 +14,10 @@
         <div id="info" class="grid124 margin fleft">
           <h2>Info</h2>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Charity</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="page.html">About Us</a></li>
+            <li><a href="page.html">Charity</a></li>
+            <li><a href="page.html">FAQ</a></li>
+            <li><a href="page.html">Contact</a></li>
           </ul>
         </div><!-- end info -->
         <div id="cart" class="grid123 margin fleft">
@@ -41,8 +36,8 @@
         <div class="clearfix"></div>
         <div id="navigation">
           <ul class="lvl-1 grid1210 margin fleft">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="has-lvl-2">
+            <li><a href="#">Home</a></li>
+            <li class="has-lvl-2 active">
               <a href="#">T-Shirts</a>
               <ul class="lvl-2">
               <li><a href="#">Male T-Shirts</a></li>
@@ -68,49 +63,17 @@
           </ul>
           <form id="hsearch" action="search_results.html">
             <p class="grid122 margin fright">
-              <input type="text" placeholder="SEARCH"/>
+              <input type="text" placeholder="SEARCH" value="SEARCH"/>
               <input type="submit" value="Search"/>
             </p>
           </form>
         </div><!-- end navigation -->
       </div><!-- end header -->
       <div class="clearfix"></div>
-      <div id="content">
-        <!-- nivo.slider -->
-        <noscript>
-          <div class="theme-batu margin">
-            <div class="nivoSlider center">
-              <img src="images/slider/test1.jpg" alt="" />
-            </div>
-          </div>
-        </noscript>
-        <script type="text/javascript">
-          document.write(
-            '<div class="theme-batu margin">'+
-              '<div id="slider" class="nivoSlider center">'+
-                '<img src="images/slider/test1.jpg" alt="" />'+
-                '<a href="#"><img src="images/slider/test2.jpg" alt="" title="This is an example of a caption" /></a>'+
-                '<img src="images/slider/test3.jpg" alt=""/>'+
-                '<img src="images/slider/test4.jpg" alt=""/>'+
-              '</div>'+
-            '</div>'
-          );
-          $(document).ready(function() {
-              $('#slider').nivoSlider({
-                effect: 'slideInRight',
-                slices: 1,
-                pauseOnHover: true,
-                controlNav: false,
-                directionNav: true,
-                directionNavHide: true,
-                captionOpacity: 1,
-                prevText: '<', 
-                nextText: '>'
-              });
-          });
-        </script><!-- end nivo.slider -->
+      <div id="content">        
         <div class="catalog">
-          <h2 class="gridmax margin">Featured Products</h2>
+          <h2 class="gridmax margin">T-Shirts</h2>
+          <!--<div id="breadcrumb" class="gridmax margin"><a href="#">T-Shirts</a> > <a href="#">Female T-Shirts</a></div>-->
           <div class="product">
             <a href="product.html">
               <img src="images/product.jpg" alt="Raise Your Hand (Girls)"/>
@@ -146,12 +109,12 @@
     <div id="footer" class="container center">
       <ul id="footer-nav">
         <li>Copyright &copy; Designed By Batucan 2012</li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="page.html">About Us</a></li>
         <li><a href="search.html">Search</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
+        <li><a href="page.html">Terms of Service</a></li>
+        <li><a href="page.html">Privacy Policy</a></li>
+        <li><a href="http://www.twitter.com/">Twitter</a></li>
+        <li><a href="http://www.facebook.com/">Facebook</a></li>
       </ul>
       <div class="clearfix"></div>
     </div><!-- emd footer -->
